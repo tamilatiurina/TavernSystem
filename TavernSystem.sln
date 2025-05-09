@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{16059969-BCB4-4B96-AB61-DA3B85C14EB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TavernSystem.API", "TavernSystem.API\TavernSystem.API.csproj", "{C440864A-94CD-4C15-A4A1-21727286566B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TavernSystem.Application", "TavernSystem.Application\TavernSystem.Application.csproj", "{B7985472-00CE-4B35-BBCE-EF8E4C7B4463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TavernSystem.Models", "TavernSystem.Models\TavernSystem.Models.csproj", "{5C4D3DDD-AB6D-4410-A9CD-409FA635178B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C440864A-94CD-4C15-A4A1-21727286566B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C440864A-94CD-4C15-A4A1-21727286566B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C440864A-94CD-4C15-A4A1-21727286566B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C440864A-94CD-4C15-A4A1-21727286566B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7985472-00CE-4B35-BBCE-EF8E4C7B4463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7985472-00CE-4B35-BBCE-EF8E4C7B4463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7985472-00CE-4B35-BBCE-EF8E4C7B4463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7985472-00CE-4B35-BBCE-EF8E4C7B4463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C4D3DDD-AB6D-4410-A9CD-409FA635178B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C4D3DDD-AB6D-4410-A9CD-409FA635178B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C4D3DDD-AB6D-4410-A9CD-409FA635178B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C4D3DDD-AB6D-4410-A9CD-409FA635178B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C440864A-94CD-4C15-A4A1-21727286566B} = {16059969-BCB4-4B96-AB61-DA3B85C14EB8}
+		{B7985472-00CE-4B35-BBCE-EF8E4C7B4463} = {16059969-BCB4-4B96-AB61-DA3B85C14EB8}
+		{5C4D3DDD-AB6D-4410-A9CD-409FA635178B} = {16059969-BCB4-4B96-AB61-DA3B85C14EB8}
+	EndGlobalSection
+EndGlobal
