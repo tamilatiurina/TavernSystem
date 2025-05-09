@@ -1,4 +1,5 @@
 using TavernSystem.Application;
+using TavernSystem.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("UniversityDatabase");
@@ -30,6 +31,29 @@ app.MapGet("/api/adventurers", (ITavernSystemService tavernSystemService) =>
         return Results.Problem(ex.Message);
     }
 });
+
+
+app.MapPost("/api/adventurers", (ITavernSystemService tavernSystemService, Adventurer anventurer) =>
+{
+    try
+    {
+        var result = tavernSystemService.AddAdventurer(anventurer);
+        if (result is true)
+        {
+            return Results.Created("/api/adventurers", result);
+        }
+        else
+        {
+            return Results.BadRequest();
+        }
+    }
+    catch (Exception ex)
+    {
+        return Results.Problem(ex.Message);
+    }
+});
+
+
 
 app.Run();
 

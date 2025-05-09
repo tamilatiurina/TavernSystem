@@ -45,4 +45,24 @@ public class TavernSystemService: ITavernSystemService
         }
         return adventurers;
     }
+
+    public bool AddAdventurer(Adventurer adventurer)
+    {
+        const string insertString = "INSERT INTO Adventurer (Nickname, RaceId, ExperienceId, PersonId) VALUES (@Nickname, @RaceId, @ExperienceId, @PersonId)";
+
+        int countRowsAdded = -1;
+        
+        using (SqlConnection connection = new SqlConnection(_connectionString))
+        {
+            SqlCommand command = new SqlCommand(insertString, connection);
+            command.Parameters.AddWithValue("@Nickname", adventurer.Nickname);
+            command.Parameters.AddWithValue("@RaceId", adventurer.RaceId);
+            command.Parameters.AddWithValue("@ExperienceId", adventurer.ExperienceId);
+            command.Parameters.AddWithValue("@PersonId", adventurer.PersonId);
+            connection.Open();
+            countRowsAdded = command.ExecuteNonQuery();
+        }
+        
+        return countRowsAdded != -1;
+    }
 }
